@@ -21,10 +21,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
     }
-//    @OnClick(R.id.button1)
-//    public void onClick(){
-//        Toast.makeText(this,"button1",Toast.LENGTH_SHORT).show();
-//    }
+    @OnClick(R.id.button1)
+    public void onClick(){
+        Toast.makeText(this,"button1",Toast.LENGTH_SHORT).show();
+    }
     @OnClick({R.id.button1,R.id.button2})
     public void OnClick(Button button){
         switch (button.getId()){
